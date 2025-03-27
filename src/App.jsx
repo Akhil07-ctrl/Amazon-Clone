@@ -101,7 +101,7 @@ class App extends Component {
           removeAllCartItems: this.removeAllCartItems,
         }}
       >
-        <BrowserRouter basename='/Amazon-Clone/login'>
+        <BrowserRouter basename="/Amazon-Clone">
           <Routes>
             {/* Public Route */}
             <Route path="/login" element={<LoginForm />} />
