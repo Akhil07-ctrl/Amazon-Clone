@@ -84,3 +84,60 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 📝 License
 
 This project is open source and available under the MIT License.
+
+## 📁 Project Structure
+
+```
+Amazon-Clone/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── auth/
+│   │   ├── cart/
+│   │   ├── checkout/
+│   │   ├── header/
+│   │   ├── home/
+│   │   ├── products/
+│   │   └── productDetails/
+│   ├── context/
+│   │   └── CartContext.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── vite-env.d.ts
+└── package.json
+```
+
+## 🧪 Testing
+
+This project currently doesn't have automated tests implemented. However, manual testing can be performed by:
+
+1. Testing all navigation routes
+2. Verifying cart functionality
+3. Testing login/logout flow
+4. Checking responsive design on different screen sizes
+
+## 🙋‍♂️ FAQ
+
+**Q: How do I clear my cart?**
+A: You can clear your cart by removing items one by one or by refreshing the page (since cart data is stored in localStorage).
+
+**Q: Can I add my own products?**
+A: Currently, this is a demo application with hardcoded products. Adding custom products would require backend integration.
+
+**Q: Is this a fully functional e-commerce site?**
+A: This is a frontend-only demo application. While it simulates the shopping experience, it doesn't have a real payment gateway integration.
+
+## 🧑‍💻 Author
+
+👤 **Akhil07-ctrl**
+
+- GitHub: [@Akhil07-ctrl](https://github.com/Akhil07-ctrl)
+- Portfolio: [Portfolio](https://portfolio-nine-flax-29.vercel.app/)
+
+## 📜 License
+
+This project is open source and available under the MIT License.
