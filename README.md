@@ -16,25 +16,64 @@ Check out the live demo: [Amazon Clone](https://Akhil07-ctrl.github.io/Amazon-Cl
 - **Checkout Process**: Complete payment flow for purchased items
 - **Responsive Design**: Fully responsive UI that works on mobile and desktop
 
+## 🏗️ Project Structure
+
+The application follows a modular and scalable architecture:
+
+```
+Amazon-Clone/
+├── public/                        # Static assets
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── assets/                   # Image assets
+│   ├── components/               # Reusable UI components
+│   │   ├── AllProductsSection/  # Section for all products
+│   │   ├── Cart/                # Main cart component
+│   │   ├── CartItem/            # Individual cart item
+│   │   ├── CartListView/        # Cart items list view
+│   │   ├── CartSummary/         # Cart summary display
+│   │   ├── EmptyCartView/       # Empty cart state
+│   │   ├── FiltersGroup/        # Product filters
+│   │   ├── Header/              # Navigation header
+│   │   ├── Home/               # Home page components
+│   │   ├── LoginForm/           # User login form
+│   │   ├── NotFound/            # 404 page
+│   │   ├── PaymentPage/         # Payment processing page
+│   │   ├── PaymentPopup/        # Payment confirmation popup
+│   │   ├── PrimeDealsSection/   # Prime deals section
+│   │   ├── ProductCard/         # Product display card
+│   │   ├── ProductItemDetails/  # Detailed product view
+│   │   ├── Products/            # Products listing
+│   │   ├── ProductsHeader/      # Products section header
+│   │   ├── ProtectedRoute/      # Route protection
+│   │   └── SimilarProductItem/  # Similar products display
+│   ├── context/               # State management
+│   │   └── CartContext.jsx    # Shopping cart context
+│   ├── App.jsx                # Root component
+│   ├── App.css                # Root styles
+│   ├── index.css              # Global styles
+│   └── main.jsx              # Entry point
+├── .gitignore                  # Git ignore file
+├── package.json               # Project dependencies
+├── vite.config.js            # Vite configuration
+├── vercel.json              # Vercel deployment configuration
+└── eslint.config.js         # ESLint configuration
+```
+
 ## 🛠️ Technologies Used
 
 - **React 19**: Modern UI library for building user interfaces
 - **React Router v7**: For navigation and routing
-- **Vite**: Next-generation frontend tooling
-- **Context API**: For state management across components
-- **LocalStorage**: For persisting cart data
-- **CSS**: Custom styling for all components
+- **Vite v6**: Next-generation frontend tooling
+- **Context API**: For state management
+- **js-cookie**: For session management
+- **React Icons**: For UI icons
+- **gh-pages**: For GitHub Pages deployment
+- **ESLint**: For code quality
+- **Custom CSS**: For styling and theming
 
-## 🏗️ Project Structure
 
-The application follows a component-based architecture:
-
-- **Authentication**: Login system with protected routes
-- **Home**: Landing page showcasing featured products
-- **Products**: Browse and filter through the product catalog
-- **Product Details**: Detailed view of individual products
-- **Cart**: View and manage items in your shopping cart
-- **Checkout**: Complete the purchase process
 
 ## 🚦 Getting Started
 
@@ -77,48 +116,44 @@ The project is configured for GitHub Pages deployment:
 npm run deploy
 ```
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 📁 Project Structure
-
-```
-Amazon-Clone/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── auth/
-│   │   ├── cart/
-│   │   ├── checkout/
-│   │   ├── header/
-│   │   ├── home/
-│   │   ├── products/
-│   │   └── productDetails/
-│   ├── context/
-│   │   └── CartContext.js
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   ├── main.jsx
-│   └── vite-env.d.ts
-└── package.json
-```
-
 ## 🧪 Testing
 
-This project currently doesn't have automated tests implemented. However, manual testing can be performed by:
+This project currently uses manual testing for quality assurance. Here's how to test the application:
 
-1. Testing all navigation routes
-2. Verifying cart functionality
-3. Testing login/logout flow
-4. Checking responsive design on different screen sizes
+1. **Navigation Testing**
+   - Verify all routes work correctly
+   - Test protected routes with login
+   - Check navigation between pages
+
+2. **Cart Functionality**
+   - Add different products to cart
+   - Verify cart persistence
+   - Test cart item removal
+   - Check cart summary calculations
+
+3. **Authentication**
+   - Test login with valid credentials
+   - Verify logout functionality
+   - Check protected route access
+
+4. **Responsive Design**
+   - Test on different screen sizes
+   - Verify mobile layout
+   - Check desktop responsiveness
+   - Test tablet view
+
+5. **Product Features**
+   - Verify product filtering
+   - Test product search
+   - Check product details page
+   - Verify similar products display
+
+6. **Payment Process**
+   - Test payment flow
+   - Verify payment confirmation
+   - Check payment popup functionality
+
+**Note:** This is a frontend-only demo application, so some features like actual payment processing and backend integration are simulated.
 
 ## 🙋‍♂️ FAQ
 
@@ -133,7 +168,7 @@ A: This is a frontend-only demo application. While it simulates the shopping exp
 
 ## 🧑‍💻 Author
 
-👤 **Akhil07-ctrl**
+👤 **Kundena Akhil**
 
 - GitHub: [@Akhil07-ctrl](https://github.com/Akhil07-ctrl)
 - Portfolio: [Portfolio](https://portfolio-nine-flax-29.vercel.app/)
